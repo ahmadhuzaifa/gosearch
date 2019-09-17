@@ -1,0 +1,57 @@
+<schema xmlns="http://optimal-systems.org/ns/dmscloud/schema/v4.0/"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://optimal-systems.org/ns/dmscloud/schema/v4.0/ dmsCloud-schema.xsd">
+    <propertyStringDefinition>
+        <id>description</id>
+        <propertyType>string</propertyType>
+        <cardinality>single</cardinality>
+        <required>true</required>
+    </propertyStringDefinition>
+
+    <propertyDecimalDefinition>
+        <id>weight</id>
+        <propertyType>decimal</propertyType>
+        <cardinality>single</cardinality>
+        <required>true</required>
+    </propertyDecimalDefinition>
+
+    <propertyStringDefinition>
+        <id>location</id>
+        <propertyType>string</propertyType>
+        <cardinality>single</cardinality>
+        <required>true</required>
+    </propertyStringDefinition>
+
+    <propertyStringDefinition>
+        <id>user</id>
+        <propertyType>string</propertyType>
+        <cardinality>single</cardinality>
+        <required>true</required>
+    </propertyStringDefinition>
+
+    <propertyStringDefinition>
+        <id>timestamp</id>
+        <propertyType>string</propertyType>
+        <cardinality>single</cardinality>
+        <required>true</required>
+    </propertyStringDefinition>
+
+    <propertyStringDefinition>
+        <id>image</id>
+        <propertyType>string</propertyType>
+        <cardinality>single</cardinality>
+        <required>true</required>
+    </propertyStringDefinition>
+
+    <typeDocumentDefinition>
+        <id>image</id>
+        <baseId>enaio:document</baseId>
+        <propertyReference>description</propertyReference>
+        <propertyReference>weight</propertyReference>
+        <propertyReference>location</propertyReference>
+        <propertyReference>user</propertyReference>
+        <propertyReference>timestamp</propertyReference>
+        <propertyReference>image</propertyReference>
+        <contentStreamAllowed>notallowed</contentStreamAllowed>
+    </typeDocumentDefinition>
+</schema>

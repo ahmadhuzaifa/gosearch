@@ -1,0 +1,29 @@
+{
+  "objects": [
+    {
+      "properties": {
+        "objectTypeId": {
+          "value": "image"
+        },
+        "description": {
+          "value": ${description}
+        },
+        "weight": {
+          "value": ${weight}
+        },
+        "location": {
+          "value": ${location}
+        },
+        "user": {
+          "value": ${user}
+        },
+        "timestamp": {
+          "value": ${timestamp}
+        },
+        "image": {
+          "value": ${image}
+        }
+      }
+    }
+  ]
+}
